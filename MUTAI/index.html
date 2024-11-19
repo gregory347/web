@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/629d6582da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/moghulis.png" type="image/png">
+    <script src="https://kit.fontawesome.com/629d6582da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="nav-toggle" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <h1>let's connect</h1>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home" onclick="toggleContent('home')"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" onclick="toggleContent('about')"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#portfolio" onclick="toggleContent('portfolio')"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#services" onclick="toggleContent('services')"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="#contact" onclick="toggleContent('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div id="sidemenu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#home" onclick="toggleContent('home')"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" onclick="toggleContent('about')"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#portfolio" onclick="toggleContent('portfolio')"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#services" onclick="toggleContent('services')"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="#contact" onclick="toggleContent('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="header-text">
+            <h1>
+                Hello, I'm <br>
+                <span>Mutai Brian</span> <br>
+                Software Engineer
+            </h1>
+            <a href="https://docs.google.com/document/d/1jhxaMRAsRlOEKVyvEjFJRKe6OpgB_CQo/edit?usp=sharing&ouid=113158751951230446171&rtpof=true&sd=true" class="btn" download="KipngenoGregory-CV.pdf" title="Download CV"><i class="fas fa-download"></i> Hire Me</a>
+
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p> a passionate software developer with a knack for creating user-friendly and visually appealing designs. With expertise in both frontend and backend development, I turn ideas into functional and dynamic applications</p>
+                </div>
+                <div class="about-col-1">
+                    <img src="/images/mutai.jpg" alt="About Me" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-details">
+        <div class="container">
+            <div class="toggle-buttons">
+                <button class="toggle-btn" data-target="skills">Skills</button>
+                <button class="toggle-btn" data-target="experience">Experience</button>
+                <button class="toggle-btn" data-target="education">Education</button>
+            </div>
+
+            <div id="skills" class="toggle-content">
+                <h3>Skills</h3>
+                <p>Front-end development: Proficient in HTML, CSS, and JavaScript, including modern frameworks like React or Angular.</p>
+                <p>Back-end development: Knowledge of server-side programming using Node.js, PHP, or Python (Django/Flask).</p>
+                <p>Python programming: Experience with data analysis, machine learning libraries (Pandas, NumPy, scikit-learn), and automation scripts.</p>
+                <p>Networking: Understanding of networking protocols, configuration, and troubleshooting (TCP/IP, DNS, DHCP).</p>
+                <p>IT support and troubleshooting: Experience in diagnosing and solving hardware and software issues.</p>
+            </div>
+
+            <div id="experience" class="toggle-content">
+                <h3>Experience</h3>
+                <p>I have hands-on experience in IT, gained through internships, academic projects, and freelance work:</p>
+                <ul>
+                    <li><strong>Technical Support Intern:</strong> Provided troubleshooting and technical support for hardware and software issues, ensuring minimal downtime for users.</li>
+                    <li><strong>Network Administration Assistant:</strong> Assisted in configuring and maintaining network systems, including routers, switches, and firewalls.</li>
+                    <li><strong>Web Development Projects:</strong> Developed responsive websites and web applications using HTML, CSS, JavaScript, and Python during academic projects and freelance work.</li>
+                    <li><strong>Cybersecurity Analysis:</strong> Conducted penetration testing and implemented security protocols to safeguard systems from threats during a cybersecurity internship.</li>
+                    <li><strong>Database Management:</strong> Designed and managed databases using MySQL and MongoDB, optimizing performance and ensuring data integrity.</li>
+                    <li><strong>Cloud Computing:</strong> Deployed and managed applications on cloud platforms like AWS and Microsoft Azure during coursework and personal projects.</li>
+                    <li><strong>IT Support Volunteer:</strong> Assisted non-profits by setting up and managing their IT systems, ensuring smooth operation of their tech infrastructure at Ruiru tecnical</li>
+                </ul>
+                <p>These experiences have equipped me with a solid foundation in IT operations, web development, and problem-solving in diverse environments.</p>
+            </div>
+
+            <div id="education" class="toggle-content">
+                <h3>Education</h3>
+                <p>Bachelor's Information Technology - Zetech University(ongoing).</p>
+                <p>Itech community club member (ITECH Zetech University) .</p>
+                <p>Python crash course  from Github learn.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>IT Support and Networking</h3>
+                    <p>Offering technical support, system troubleshooting, and network administration to ensure smooth operations and connectivity.</p>
+                </div>
+                <div class="service">
+                    <h3>Cloud Solutions</h3>
+                    <p>Deploying, managing, and optimizing applications and services on cloud platforms like AWS, Azure, and Google Cloud.</p>
+                </div>
+                <div class="service">
+                    <h3>Database Management</h3>
+                    <p>Designing, implementing, and maintaining databases to ensure data integrity, scalability, and efficient performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">built-projects</h2>
+            <div class="portfolio-list">
+                <div class="work">
+                    <img src="/images/1.png" alt="Work 1">
+                    <h3>Network Security Monitoring Website</h3>
+                    <p>Developed a Python-based tool to monitor and detect potential network vulnerabilities in real-time.</p>
+                    <a href="https://realtime-networkdetection.netlify.app/" class="btn">Network Security Monitoring Tool</a>
+                </div>
+                <div class="work">
+                    <img src="/images/2.png" alt="Work 2">
+                    <h3>Hospital System Website</h3>
+                    <p>Designed and deployed a database-driven system to manage hospital operations, including patient records and staff schedules.</p>
+                    <a href="https://hospitalmanagementsystemke.netlify.app/" class="btn">Hospital Management System</a>
+                </div>
+                <div class="work">
+                    <img src="/images/3.png" alt="Work 3">
+                    <h3>Cloud-Based File Sharing Website</h3>
+                    <p>collaborated with developer Gregory to implemented a secure cloud platform for file storage and sharing, optimizing collaboration across remote teams.</p>
+                    <a href="https://cloudbasedfile-sharingsystem.netlify.app/" class="btn">Cloud-Based File Sharing System</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h2>get in touch</h2>
+                <div class="footer-contact-left">
+                    <p><i class="fas fa-envelope"></i> mutaibrian500@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +254704973792</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/direct/inbox/?__pwa=1"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/36611215/36611215"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact-right">
+                    <form id="contact-form" name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    <div id="status"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Mutai Brian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
